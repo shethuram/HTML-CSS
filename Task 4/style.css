@@ -9,14 +9,13 @@ header {
     padding: 15px;
 }
 
-/* KEEP EXISTING STYLE */
+
 nav a {
     color: white;
     margin-right: 15px;
     text-decoration: none;
 }
 
-/* ✅ ADD THIS FOR DROPDOWN */
 .nav-links {
     list-style: none;
     margin: 0;
@@ -27,6 +26,7 @@ nav a {
     display: inline-block;
     position: relative;
     margin-right: 15px;
+   
 }
 
 /* DROPDOWN */
@@ -36,11 +36,12 @@ nav a {
     background-color: #444;
     list-style: none;
     padding: 5px;
+   
 }
 
 /* SHOW ON HOVER */
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block; 
 }
 
 /* DROPDOWN ITEMS */
