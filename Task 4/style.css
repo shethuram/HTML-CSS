@@ -115,7 +115,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* ✅ ADD THIS */
     .nav-links li {
         display: block;
         margin: 10px 0;
