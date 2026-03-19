@@ -9,7 +9,6 @@ header {
     padding: 15px;
 }
 
-/* KEEP EXISTING STYLE */
 nav a {
     color: white;
     margin-right: 15px;
@@ -114,7 +113,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* ✅ ADD THIS */
+ 
     .nav-links li {
         display: block;
         margin: 10px 0;
