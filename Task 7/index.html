@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EventHub</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <h1>EventHub</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Events</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section>
+            <h2>Discover Amazing Events</h2>
+
+                <!-- RADIO -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+
+                <!-- SLIDER -->
+                <div class="hero-slider">
+                    <div class="hero-slides">
+                        <div class="hero-slide"><img src="../assets/images/concert.jpg"></div>
+                        <div class="hero-slide"><img src="../assets/images/techtalk.jpg"></div>
+                        <div class="hero-slide"><img src="../assets/images/sports.jpg"></div>
+                        <div class="hero-slide"><img src="../assets/images/workshop.jpg"></div>
+                    </div>
+                </div>
+
+                <!-- DOTS -->
+                <div class="hero-nav">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+
+        </section>
+       
+        <!--  TABBED SECTION -->
+        <section>
+            <h2>Browse by Category</h2>
+
+            <!-- Hidden Inputs -->
+            <input type="radio" name="tabs" id="tab1" checked>
+            <input type="radio" name="tabs" id="tab2">
+            <input type="radio" name="tabs" id="tab3">
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <label for="tab1">Art</label>
+                <label for="tab2">Tech</label>
+                <label for="tab3">Sports</label>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+                <!-- ART -->
+                <div class="content content1">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="../assets/images/concert.jpg">
+                            <h3>Music Concert</h3>
+                            <p>Enjoy live music experience</p>
+                            <a href="#modal1" class="btn">View Details</a>
+                        </div>
+
+                        <div class="card">
+                            <img src="../assets/images/art.jpg">
+                            <h3>Art Exhibition</h3>
+                            <p>Explore creative artworks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TECH -->
+                <div class="content content2">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="../assets/images/techtalk.jpg">
+                            <h3>Tech Talk</h3>
+                            <p>Learn about latest technologies</p>
+                             <a href="#modal2" class="btn">View Details</a>
+                        </div>
+
+                        <div class="card">
+                            <img src="../assets/images/workshop.jpg">
+                            <h3>Workshop</h3>
+                            <p>Hands-on learning sessions</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="../assets/images/startup.jpg">
+                            <h3>Startup Pitch</h3>
+                            <p>Innovative ideas showcase</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPORTS -->
+                <div class="content content3">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="../assets/images/sports.jpg">
+                            <h3>Sports Event</h3>
+                            <p>Exciting competitions</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--GAllery section-->
+        <section>
+            <h2>Event Highlights</h2>
+
+            <div class="carousel">
+
+                <!-- ORIGINAL -->
+                <div class="group">
+                    <div class="card"><img src="../assets/images/concert.jpg"></div>
+                    <div class="card"><img src="../assets/images/techtalk.jpg"></div>
+                    <div class="card"><img src="../assets/images/sports.jpg"></div>
+                    <div class="card"><img src="../assets/images/workshop.jpg"></div>
+                </div>
+
+                <!-- DUPLICATE -->
+                <div class="group" aria-hidden="true">
+                    <div class="card"><img src="../assets/images/concert.jpg"></div>
+                    <div class="card"><img src="../assets/images/techtalk.jpg"></div>
+                    <div class="card"><img src="../assets/images/sports.jpg"></div>
+                    <div class="card"><img src="../assets/images/workshop.jpg"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Us</h2>
+            <p>EventHub helps users discover events easily</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 EventHub</p>
+    </footer>
+
+    <!-- MODALS -->
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h2>Music Concert</h2>
+            <p>Date: April 10</p>
+            <p>Performer: Vijay Antony</p>
+            <p>Time: 6:00 PM</p>
+            <p>Cost: ₹999</p>
+            <a href="#" class="close-btn">Close</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h2>Tech Talk</h2>
+            <p>Date: April 15</p>
+            <p>Speaker: AI Expert</p>
+            <p>Time: 10:00 AM</p>
+            <p>Cost: Free</p>
+            <a href="#" class="close-btn">Close</a>
+        </div>
+    </div>
+
+</body>
+</html>
