@@ -1,0 +1,97 @@
+/* GLOBAL RESET */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* HEADER (same feel as index) */
+header {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* MAIN */
+main {
+    padding: 40px 20px;
+}
+
+/* FORM SECTION */
+.register-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* FORM BOX */
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* HEADING */
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HOVER */
+.form-box button:hover {
+    background: #555;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
