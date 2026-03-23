@@ -113,7 +113,20 @@
                             <img src="assets/images/concert.jpg">
                             <h3>Music Concert</h3>
                             <p>Enjoy live music experience</p>
-                            <a href="#modal1" class="btn">View Details</a>
+
+                            <input type="checkbox" id="modal1-toggle">
+                            <label for="modal1-toggle" class="btn">View Details</label>
+                                <div class="modal modal1">
+                                    <div class="modal-content">
+                                        <h2>Music Concert</h2>
+                                        <p>Date: April 10</p>
+                                        <p>Performer: Vijay Antony</p>
+                                        <p>Time: 6:00 PM</p>
+                                        <p>Cost: ₹999</p>
+
+                                        <label for="modal1-toggle" class="close-btn">Close</label>
+                                    </div>
+                                </div>
                         </div>
 
                         <div class="card">
@@ -130,7 +143,21 @@
                             <img src="assets/images/techtalk.jpg">
                             <h3>Tech Talk</h3>
                             <p>Learn about latest technologies</p>
-                            <a href="#modal2" class="btn">View Details</a>
+                            
+                            <input type="checkbox" id="modal2-toggle">
+                            <label for="modal2-toggle" class="btn">View Details</label>
+                            <div class="modal modal2">
+                                <div class="modal-content">
+                                    <h2>Tech Talk</h2>
+                                    <p>Date: April 15</p>
+                                    <p>Speaker: AI Expert</p>
+                                    <p>Time: 10:00 AM</p>
+                                    <p>Cost: Free</p>
+
+                                    <label for="modal2-toggle" class="close-btn">Close</label>
+                                </div>
+                            </div>
+                            
                         </div>
 
                         <div class="card">
@@ -274,6 +301,30 @@
 <footer>
     <p>© 2026 EventHub</p>
 </footer>
+
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h2>Music Concert</h2>
+            <p>Date: April 10</p>
+            <p>Performer: Vijay Antony</p>
+            <p>Time: 6:00 PM</p>
+            <p>Cost: ₹999</p>
+            <a href="#" class="close-btn">Close</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h2>Tech Talk</h2>
+            <p>Date: April 15</p>
+            <p>Speaker: AI Expert</p>
+            <p>Time: 10:00 AM</p>
+            <p>Cost: Free</p>
+            <a href="#" class="close-btn">Close</a>
+        </div>
+    </div>
 
 </body>
 </html>
