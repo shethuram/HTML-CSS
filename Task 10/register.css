@@ -1,46 +1,173 @@
-/* GLOBAL RESET */
+/* ================= GLOBAL LAYOUT ================= */
+
 * {
-    box-sizing: border-box;
-}
+  box-sizing: border-box;
+  }
 
 body {
-    font-family: Arial;
-    margin: 0;
+font-family: Arial;
+margin: 0;
+
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
 }
 
-/* HEADER (same feel as index) */
+/* ================= HEADER ================= */
 header {
-    background-color: #333;
-    color: white;
-    padding: 8px 15px;
+background-color: #333;
+color: white;
+position: sticky;
+top: 0;
+z-index: 1000;
+
+padding: 10px 30px;
+
+display: grid;
+grid-template-columns: auto 1fr auto;
+align-items: center;
+
 }
 
-header h1 {
-    margin: 0;
-    font-size: 22px;
-    padding: 10px 0;
+/* LOGO */
+.logo {
+height: 50px;
+}
+
+/* ================= NAV ================= */
+nav {
+justify-self: center;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+color: white;
+text-decoration: none;
+cursor: pointer;
 }
 
 .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+display: flex;
+gap: 30px;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .nav-links li {
-    display: inline-block;
-    margin-right: 15px;
+position: relative;
 }
 
-/* MAIN */
-main {
-    padding: 40px 20px;
+/* ================= DROPDOWN ================= */
+.dropdown-menu {
+display: none;
+position: absolute;
+background-color: #444;
+list-style: none;
+padding: 10px;
+border-radius: 5px;
+min-width: 100px;
+white-space: nowrap;
 }
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-menu li {
+margin: 10px 0;
+}
+
+.dropdown-menu a {
+display: block;
+color: white;
+text-decoration: none;
+font-size: 14px;
+transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+color: #ffcc00;
+padding-left: 5px;
+}
+
+/* ================= MAIN ================= */
+main {
+flex: 1;
+padding: 20px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+}
+
+/* ================= HAMBURGER ================= */
+#menu-toggle {
+display: none;
+}
+
+.menu-icon {
+display: none;
+font-size: 24px;
+cursor: pointer;
+color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+header {
+    padding: 8px 15px;
+}
+
+.logo {
+    height: 28px;
+}
+
+.menu-icon {
+    display: block;
+    justify-self: end;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#menu-toggle:checked ~ nav {
+    max-height: 400px;
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.nav-links a {
+    font-size: 14px;
+    padding: 8px 0;
+    display: block;
+}
+
+.dropdown-menu {
+    position: static;
+}
+
+}
+
 
 /* FORM SECTION */
 .register-section {
@@ -86,12 +213,4 @@ main {
 /* HOVER */
 .form-box button:hover {
     background: #555;
-}
-
-/* FOOTER */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
 }
