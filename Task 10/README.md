@@ -55,5 +55,9 @@ Create a fully functional multi-section website that simulates navigation betwee
 ### Mobile View (Hamburger Menu)
 ![Mobile](screenshots/mobile.png)
 
-### Register Page
-![Register](screenshots/register.png)
+#### Register Page
+![Register Page](screenshots/register.png)
+
+## 🌐 Live Demo
+
+🔗 https://shethuram.github.io/HTML-CSS/Task%2010/
