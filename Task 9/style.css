@@ -91,6 +91,61 @@ section {
     scroll-margin-top: 80px;
 }
 
+/* OVERLAY TEXT */
+.hero-slide {
+    position: relative;
+}
+
+/* FULL WIDTH TEXT */
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    text-align: center;
+
+    color: white;
+    z-index: 10;
+
+    padding: 0 20px;
+}
+
+/* BIG MAIN TEXT */
+.hero-overlay h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+
+    text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+/* SUB TEXT */
+.hero-overlay p {
+    font-size: 18px;
+    margin-top: 10px;
+
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.2)
+    );
+
+    z-index: 5;
+}
+
 /* GRID ONLY FOR TABS + SIDEBAR */
 .layout {
     display: grid;
@@ -98,6 +153,8 @@ section {
     gap: 20px;
     align-items: start;
 }
+
+
 
 /* SIDEBAR */
 .sidebar {
@@ -280,62 +337,6 @@ input[type="radio"] {
 #slide3:checked ~ .hero-nav label:nth-child(3),
 #slide4:checked ~ .hero-nav label:nth-child(4) {
     background: #333;
-}
-
-
-/* OVERLAY TEXT */
-.hero-slide {
-    position: relative;
-}
-
-/* FULL WIDTH TEXT */
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;
-    text-align: center;
-
-    color: white;
-    z-index: 10;
-
-    padding: 0 20px;
-}
-
-/* BIG MAIN TEXT */
-.hero-overlay h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 0;
-
-    text-shadow: 0 4px 10px rgba(0,0,0,0.7);
-}
-
-/* SUB TEXT */
-.hero-overlay p {
-    font-size: 18px;
-    margin-top: 10px;
-
-    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-}
-
-.hero-slide::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.8),
-        rgba(0,0,0,0.2)
-    );
-
-    z-index: 5;
 }
 
 
